@@ -12,13 +12,24 @@
 <body>
     <h1>Hello World</h1>
     <h2>Hello ini H2</h2>
+    <img src="./src/boaster.jpeg" alt="">
     <script type="module">
         import {sayHello} from "./src/hello.js"
         import {v4} from "uuid";
+        import * as person from "./src/human.json";
+        import text from "./src/hallo.txt?raw";
+
         sayHello("Virgo");
         console.info(v4());
 
         console.log("Hello world");
+
+        console.log(person.name);
+        console.log(person.sex);
+        console.log(person.food);
+
+        console.log(text)
+
     </script>
 </body>
 </html>
